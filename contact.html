@@ -4,21 +4,25 @@
 	<meta charset="UTF-8">
 	<title>Basic_Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
 </head>
 <body>
+	<div class="content_holder">
 	<header>
 		<div class="namebox">
 			<h1 class="name">Jennie Snider</h1>
 		</div>
-		<div class="toplinks">
-			<a href="#">About</a>
-			<a href="#">Portfolio</a>
-			<a href="#">Contact</a>
-		</div>
+		<nav class="toplinks">
+			<a class="aboutlink" href="#">About</a>
+			<a class="portfoliolink" href="#">Portfolio</a>
+			<a class="contactlink" href="#">Contact</a>
+		</nav>
 	</header>
-	<div class="about">
-		<h1>Contact Me</h1>
-		<hr>
+	</div>
+
+	<div class="content_holder">
+		<section class="content">
+		<h2>Contact Me</h2>
 		<form>
 			Name<br>
 			<input type="text" name="name"><br>
@@ -30,21 +34,14 @@
 			<input class="message_box" type="submit" value="Submit">
 
 		</form>
-	</div>
+		</section>
+		<section class="connect">
+			<h3>Connect With Me</h3>
+			<a href="#"><img src="assets/images/github.png"></a>
+			<a href="#"><img src="assets/images/linkedin.png"></a>
+			<a href="#"><img src="assets/images/stackoverflow.png"></a>
 
-		<div class="connect">
-		<h1>Connect With Me</h1>
-		<hr>
-		<a href="#">
-			<img src="assets/images/github.png">
-		</a>
-		<a href="#">
-			<img src="assets/images/linkedin.png">
-		</a>
-		<a href="#">
-			<img src="assets/images/stackoverflow.png">
-		</a>
-
+		</section>
 	</div>
 	<footer>
 		<p>copyright 2017 Jennie Snider</p>
