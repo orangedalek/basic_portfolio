@@ -3,84 +3,83 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Basic_Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="reset.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 <!-- make a header containing a teal name box to the left and a nav bar to the right -->
-	<div class="content_holder">
-	<header>
-		<div class="namebox">
-			<h1 class="name">Jennie Snider</h1>
+	<header id="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">Jennie Snider</a>
+			<nav class="toplinks">
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
 		</div>
-		<nav class="toplinks">
-			<a class="aboutlink" href="#">About</a>
-			<a class="portfoliolink" href="#">Portfolio</a>
-			<a class="contactlink" href="#">Contact</a>
-		</nav>
 	</header>
-	</div>
 
-	<div class="content_holder">
-		<section class="content">
-		<h2>Gallery</h2>
-		<div class="pic-set1">
-			<div class="port-pic">
-				<a href="#" target="blank"><img class="portfolio-pic"  src="assets/images/crunky.jpg" alt="Two rad chicks with candy"><div class="caption">Hangman</div></a>
-			</div>
-			<div class="port-pic">
-				<a href="#" target="blank"><img class="portfolio-pic" src="assets/images/garden_spicer.jpg" alt="Cardboard cutout of Sean Spicer protruding from a shrubbery"><div class="caption">RPG Game</div></a>
-			</div>
-		</div>
-		<div class="pic-set2">
-			<div class="port-pic">
-				<a href="#" target="blank"><img class="portfolio-pic" src="assets/images/olive_snooze.jpg" alt="The prettiest cat in the worls snoozing under the covers"><div class="caption">Trivia Game</div></a>
-			</div>
-			<div class="port-pic">
-				<a href="#" target="blank"><img class="portfolio-pic" src="assets/images/I_veauxted.jpg" alt="Jennie with blue dog sticker after voting in New Orleans"><div class="caption">Rutgers Info Wallet</div></a>
-			</div>	
-		</div>	
-		<div class="pic-set3">
-			<div class="port-pic">
-				<a href="#" target="blank"><img class="portfolio-pic" src="assets/images/olive_feet.jpg" alt="The most beautiful cat in the world shows off her big toe beans"><div class="caption">Rock Paper Scissors</div></a>
+<!-- make gallery of clickable images that link to projects -->
+
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>Portfolio</h1>
+
+			<div class="work">
+        		<img src="assets/images/olive_snooze.jpg" alt="The prettiest cat in the world snoozing under the covers">
+
+        		<h3>Hangman</h3>
+		    </div>
+		     <div class="work">
+		        <img src="assets/images/crunky.jpg" alt="Two rad chicks with candy">
+
+		        <h3>RPG Game</h3>
+		     </div>
+		     <div class="work">
+		        <img src="assets/images/garden_spicer.jpg" alt="Cardboard cutout of Sean Spicer protruding from a shrubbery">
+
+		        <h3>Trivia Game</h3>
+		     </div>
+		     <div class="work">
+		        <img src="assets/images/I_veauxted.jpg" alt="Jennie with blue dog sticker after voting in New Orleans">
+
+		        <h3>Rutgers Info Widget</h3>
+		     </div>
+		     <div class="work">
+		        <img src="assets/images/olive_feet.jpg" alt="The most beautiful cat in the world shows off her big toe beans">
+
+		        <h3>Rock Paper Scissors</h3>
+		     </div>
+
+
 			</div>
 		</div>
 	</section>
-		<section class="connect">
-			<h3>Connect With Me</h3>
-			<a href="#"><img src="assets/images/github.png"></a>
-			<a href="#"><img src="assets/images/linkedin.png"></a>
-			<a href="#"><img src="assets/images/stackoverflow.png"></a>
 
-		</section>
-	</div>
+<!-- create the sidebar with social media links -->
 
 
+	<section class="sidebar">
+		<div>
+
+			<h2>Connect With Me</h2>
+
+			<a href="https://github.com/orangedalek"><img src="assets/images/github.png" class="social" alt="GitHib"></a>
+			<a href="https://www.linkedin.com/in/jennielannan/"><img src="assets/images/linkedin.png" class="social" alt="LinkedIn"></a>
+			<a href="https://stackoverflow.com/users/8075607/oangedalek"><img src="assets/images/stackoverflow.png" class="social" alt="StackOverflow"></a>
+		</div>
+	</section>
 
 
 
+<!-- 	footer with copyright -->
 
-	</div>
-
-
-
-	<div class="connect">
-		<h1>Connect With Me</h1>
-		<hr>
-		<a href="#">
-			<img src="assets/images/github.png">
-		</a>
-		<a href="#">
-			<img src="assets/images/linkedin.png">
-		</a>
-		<a href="#">
-			<img src="assets/images/stackoverflow.png">
-		</a>
-
-	</div>
 	<footer>
-		<p>copyright 2017 Jennie Snider</p>
+		<div class="container">
+			<p>&copy; copyright 2017 Jennie Snider</p>
+		</div>
 	</footer>
+	</div>
 
 </body>
 </html>
